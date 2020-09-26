@@ -3,7 +3,7 @@ const url = require("../config.json").mongo_url;
 
 let db, client;
 
-connect = async () => {
+const connect = async () => {
     client = await MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true});
     db = client.db("solaris").collection("streamers");
 }

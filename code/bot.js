@@ -20,12 +20,12 @@ class Bot {
 
     resubscribe() {
         handler.twitch_resubscrube();
-        setTimeout(this.resubscribe, 1000 * 60 * 60 * 24 * 5);
+        setTimeout(() => this.resubscribe(), 1000 * 60 * 60 * 24 * 5);
     }
 
     wake_up() {
         fetch(index_url);
-        setTimeout(this.wake_up, 1000 * 60 * 20);
+        setTimeout(() => this.wake_up(), 1000 * 60 * 20);
     }
 
     stream_start(data) {
