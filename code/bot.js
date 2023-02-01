@@ -10,7 +10,7 @@ class Bot {
     constructor(){
         this.server = server(this);
         this.discord_bot = new DiscordBot(this);
-        this.twitch_bot = new TwitchBot(this);
+//        this.twitch_bot = new TwitchBot(this);
  //       this.wake_up();
     }
 
