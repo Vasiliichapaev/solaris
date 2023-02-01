@@ -1,13 +1,13 @@
 const discord_token = process.env.discord_token;
 
 const Discord = require("discord.js");
-const Streamers = require("./streamers.js");
+//const Streamers = require("./streamers.js");
 
 
 class DiscordBot{
     constructor(bot){
         this.bot = bot;
-        this.streamers = new Streamers();
+ //       this.streamers = new Streamers();
         this.discord_bot = new Discord.Client();
         this.discord_bot.on("ready", () => console.log("Solaris online!"));
         this.discord_bot.on("message", msg => this.handler(msg));
