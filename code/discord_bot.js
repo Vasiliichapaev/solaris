@@ -1,5 +1,4 @@
-const config = require("../config.json");
-const discord_token = config.discord_token;
+const discord_token = process.env.discord_token;
 
 const Discord = require("discord.js");
 const Streamers = require("./streamers.js");
